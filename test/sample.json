@@ -1,0 +1,1006 @@
+{
+  "title": "Stream Node.js v0.10.31 Manual & Documentation",
+  "ids": [
+    {
+      "paragraphs": [
+        {
+          "urls": [
+            "http://twitter.com/nodejs"
+          ]
+        },
+        {
+          "urls": [
+            "index.html",
+            "all.html",
+            "stream.json"
+          ]
+        },
+        {
+          "urls": [
+            "http.html#http_http_incomingmessage",
+            "process.html#process_process_stdout",
+            "events.html#events_class_events_eventemitter"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_implementors"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback",
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_unpipe_destination"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_writable_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1",
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "zlib.html",
+            "crypto.html"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1",
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_event_finish",
+            "#stream_event_end"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_object_mode",
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "tls.html#tls_class_cryptostream"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex"
+          ]
+        },
+        {
+          "urls": [
+            "http://joyent.com/",
+            "/trademark-policy.pdf",
+            "https://raw.github.com/joyent/node/v0.10.31/LICENSE"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "urls": [
+            "http://twitter.com/nodejs"
+          ]
+        },
+        {
+          "urls": [
+            "index.html",
+            "all.html",
+            "stream.json"
+          ]
+        },
+        {
+          "urls": [
+            "http.html#http_http_incomingmessage",
+            "process.html#process_process_stdout",
+            "events.html#events_class_events_eventemitter"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_implementors"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback",
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_unpipe_destination"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_writable_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1",
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "zlib.html",
+            "crypto.html"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1",
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_event_finish",
+            "#stream_event_end"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_object_mode",
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "tls.html#tls_class_cryptostream"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "urls": [
+            "http://twitter.com/nodejs"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "urls": [
+            "index.html",
+            "all.html",
+            "stream.json"
+          ]
+        },
+        {
+          "urls": [
+            "http.html#http_http_incomingmessage",
+            "process.html#process_process_stdout",
+            "events.html#events_class_events_eventemitter"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_implementors"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback",
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_unpipe_destination"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_writable_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1",
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "zlib.html",
+            "crypto.html"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1",
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_event_finish",
+            "#stream_event_end"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_object_mode",
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "tls.html#tls_class_cryptostream"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "urls": [
+            "index.html",
+            "all.html",
+            "stream.json"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "urls": [
+            "http.html#http_http_incomingmessage",
+            "process.html#process_process_stdout",
+            "events.html#events_class_events_eventemitter"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_implementors"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback",
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_end_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_unpipe_destination"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex",
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_writable_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_duplex_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1",
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_api_for_stream_consumers"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "zlib.html",
+            "crypto.html"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_read_size_1",
+            "#stream_writable_write_chunk_encoding_callback_1"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_event_finish",
+            "#stream_event_end"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_transform"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_writable_write_chunk_encoding_callback"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_object_mode",
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "tls.html#tls_class_cryptostream"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_readable_push_chunk_encoding"
+          ]
+        },
+        {
+          "urls": [
+            "#stream_class_stream_readable",
+            "#stream_class_stream_writable",
+            "#stream_class_stream_duplex"
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "urls": [
+            "http://joyent.com/",
+            "/trademark-policy.pdf",
+            "https://raw.github.com/joyent/node/v0.10.31/LICENSE"
+          ]
+        }
+      ]
+    }
+  ]
+}
