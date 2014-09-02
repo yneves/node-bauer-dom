@@ -14,7 +14,7 @@ npm install bauer-dom
 ```js
 var dom = require("bauer-dom");
 
-// extract all urls in the document
+// extract all link urls in the document
 var urls = dom("<html>...</html>")
   .find("a[href]")
   .map(function() {
