@@ -51,18 +51,18 @@ describe("DOM",function() {
 				each: true,
 				grep: true,
 				data: {
-					"p": {
-						name: "paragraphs",
+					"a[href][title]": {
+						name: "urls",
 						each: true,
 						grep: true,
-						data: {
-							"a[href]": {
-								name: "urls",
-								data: "href",
-								each: true,
-							}
-						},
-					},
+						data: [{
+							name: "url",
+							data: "href",
+						},{
+							name: "title",
+							data: "title",
+						}],
+					}
 				},
 			},
 		});

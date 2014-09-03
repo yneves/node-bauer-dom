@@ -118,40 +118,25 @@ lib.factory.extend(lib.cheerio,{
 		// .scrape(selector,order)
 		so: function(selector,order) {
 			var output = {};
-			var element = this.find(selector);
+			var element = selector === "" ? this : this.find(selector);
 			if (element.length > 0) {
-				var scrape;
-				if (lib.factory.isString(order.data)) {
-					scrape = function() {
-						return this.scrape(order.data);
-					};
-				} else if (lib.factory.isObject(order.data)) {
-					var keys = Object.keys(order.data);
-					var len = keys.length;
-					scrape = function() {
-						var ret = {};
-						for (var i = 0; i < len; i++) {
-							var key = keys[i];
-							lib.factory.extend(ret,this.scrape(key,order.data[key]));
-						}
-						return ret;
-					}
-				}
+				var name = order.name;
+				var scraper = makeScraper(order.data);
 				if (order.each) {
-					var list = element.map(scrape);
+					var list = element.map(scraper);
 					if (order.grep) {
-						output[order.name] = list.filter(grep);
+						output[name] = list.filter(grep);
 					} else {
-						output[order.name] = list;
+						output[name] = list;
 					}
 				} else {
-					var data = scrape.call(element);
+					var data = scraper.call(element);
 					if (order.grep) {
 						if (grep(data)) {
-							output[order.name] = data;
+							output[name] = data;
 						}
 					} else {
-						output[order.name] = data;
+						output[name] = data;
 					}
 				}
 			}
@@ -164,12 +149,50 @@ lib.factory.extend(lib.cheerio,{
 
 // - -------------------------------------------------------------------- - //
 
+function makeScraper(data) {
+	var type = lib.factory.type(data);
+
+	if (type === "string") {
+		return function() {
+			return this.scrape(data);
+		};
+
+	} else if (type === "object") {
+		var keys = Object.keys(data);
+		var len = keys.length;
+		return function() {
+			var ret = {};
+			for (var i = 0; i < len; i++) {
+				var key = keys[i];
+				lib.factory.extend(ret,this.scrape(key,data[key]));
+			}
+			return ret;
+		};
+
+	} else if (type === "array") {
+		var len = data.length;
+		return function() {
+			var ret = {};
+			for (var i = 0; i < len; i++) {
+				lib.factory.extend(ret,this.scrape("",data[i]));
+			}
+			return ret;
+		};
+
+	}
+}
+
 function grep(item) {
-	if (lib.factory.isObject(item)) {
+	var type = lib.factory.type(item);
+	if (type === "object") {
 		if (Object.keys(item).length > 0) {
 			return true;
 		}
-	} else if (lib.factory.isString(item)) {
+	} else if (type === "string") {
+		if (item.length > 0) {
+			return true;
+		}
+	} else if (type === "array") {
 		if (item.length > 0) {
 			return true;
 		}
