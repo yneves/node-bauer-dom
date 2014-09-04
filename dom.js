@@ -8,6 +8,7 @@
 // - libs
 
 var lib = {
+	url: require("url"),
 	cheerio: require("cheerio"),
 	factory: require("bauer-factory"),
 };
@@ -91,6 +92,12 @@ lib.factory.extend(lib.cheerio,{
 				return this.text();
 			} else if (attr === "html") {
 				return this.html();
+			} else if (attr === "url") {
+				if (this.is("a, link")) {
+					return this.attr("href");
+				} else if (this.is("img, script, iframe")) {
+					return this.attr("src");
+				}
 			} else {
 				return this.attr(attr);
 			}
@@ -121,7 +128,7 @@ lib.factory.extend(lib.cheerio,{
 			var element = selector === "" ? this : this.find(selector);
 			if (element.length > 0) {
 				var name = order.name;
-				var scraper = makeScraper(order.data);
+				var scraper = makeScraper(order);
 				if (order.each) {
 					var list = element.map(scraper);
 					if (order.grep) {
@@ -149,12 +156,17 @@ lib.factory.extend(lib.cheerio,{
 
 // - -------------------------------------------------------------------- - //
 
-function makeScraper(data) {
+function makeScraper(order) {
+	var data = order.data;
 	var type = lib.factory.type(data);
-
 	if (type === "string") {
 		return function() {
-			return this.scrape(data);
+			var ret = this.scrape(data);
+			if (data === "url" && order.base) {
+				return lib.url.resolve(order.base,ret);
+			} else {
+				return ret;
+			}
 		};
 
 	} else if (type === "object") {
