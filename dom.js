@@ -1,8 +1,8 @@
 /*!
-**  bauer-html -- HTML building tool.
+**  bauer-dom -- Wrapper for Cheerio.
 **  Copyright (c) 2014 Yuri Neves Silveira <http://yneves.com>
 **  Licensed under The MIT License <http://opensource.org/licenses/MIT>
-**  Distributed on <http://github.com/yneves/node-bauer-html>
+**  Distributed on <http://github.com/yneves/node-bauer-dom>
 */
 // - -------------------------------------------------------------------- - //
 // - libs
