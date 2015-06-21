@@ -2,20 +2,12 @@
     "title": "Stream Node.js v0.10.31 Manual & Documentation",
     "ids": [
         {
-            "urls": [
-                {
-                    "url": "/",
-                    "title": "Go back to the home page"
-                }
-            ]
+          "url": "/",
+          "title": "Go back to the home page"
         },
         {
-            "urls": [
-                {
-                    "url": "/",
-                    "title": "Go back to the home page"
-                }
-            ]
+          "url": "/",
+          "title": "Go back to the home page"
         }
     ]
 }

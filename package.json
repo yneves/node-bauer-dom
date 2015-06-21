@@ -1,8 +1,10 @@
 {
   "name": "bauer-dom",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Wrapper for Cheerio.",
-  "keywords": ["html"],
+  "keywords": [
+    "html"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/yneves/node-bauer-dom",
   "author": {
@@ -10,7 +12,7 @@
     "url": "http://yneves.com/",
     "email": "npm@yneves.com"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/yneves/node-bauer-dom.git"
   },
@@ -21,8 +23,9 @@
     "mocha": ">=1.0.0"
   },
   "dependencies": {
-    "bauer-factory": ">=1.1.0",
-    "cheerio": ">=0.17.0"
+    "bauer-factory": "^2.0.3",
+    "cheerio": "^0.19.0",
+    "lodash": "^3.9.3"
   },
-  "main": "dom.js"
+  "main": "lib/index.js"
 }
