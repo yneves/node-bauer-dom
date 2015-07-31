@@ -1,6 +1,6 @@
 {
   "name": "bauer-dom",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Wrapper for Cheerio.",
   "keywords": [
     "html"
@@ -23,9 +23,8 @@
     "mocha": ">=1.0.0"
   },
   "dependencies": {
-    "bauer-factory": "^2.0.3",
-    "cheerio": "^0.19.0",
-    "lodash": "^3.9.3"
+    "bauer-factory": "^2.0.4",
+    "cheerio": "^0.19.0"
   },
   "main": "lib/index.js"
 }
